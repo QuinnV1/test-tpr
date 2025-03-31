@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question:nth-child(odd) {
+    background-color: #e6f7ff; /* Светло-голубой фон для нечетных вопросов */
+}
+
+.question:nth-child(even) {
+    background-color: #fff3e6; /* Светло-оранжевый фон для четных вопросов */
+}
+
+.question label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Цвет текста вопроса */
+    font-size: 18px;
+}
+
+.answers {
+    margin-left: 20px;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555; /* Цвет текста ответа */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.answers input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Стиль для радиокнопок при выборе */
+.answers input[type="radio"]:checked {
+    accent-color: #28a745; /* Зеленый цвет радиокнопки при выборе */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+#resultsContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#resultsContainer h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#answersSummary {
+    margin-top: 20px;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
